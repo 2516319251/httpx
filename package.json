@@ -1,0 +1,47 @@
+{
+	"name": "httpx",
+	"version": "1.0.1",
+	"description": "golang 实现的 http 请求库",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky install",
+		"commit": "git add . && cz",
+		"push": "git add . && cz && git push",
+		"release:major": "release-it major",
+		"release:minor": "release-it minor",
+		"release:patch": "release-it patch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/2516319251/httpx.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/2516319251/httpx/issues"
+	},
+	"homepage": "https://github.com/2516319251/httpx#readme",
+	"devDependencies": {
+		"@commitlint/cli": "^17.6.7",
+		"@commitlint/config-conventional": "^17.6.7",
+		"@mr.mikey/create-husky": "^1.1.1",
+		"@release-it/conventional-changelog": "^7.0.0",
+		"auto-changelog": "^2.4.0",
+		"commitizen": "^4.3.0",
+		"commitlint-config-cz": "^0.13.3",
+		"cz-customizable": "^7.0.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.3",
+		"release-it": "^16.0.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-customizable"
+		},
+		"cz-customizable": {
+			"config": "./.cz-config.js"
+		}
+	}
+}
